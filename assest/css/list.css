@@ -1,0 +1,985 @@
+.wrapper {
+    background-color: #f4f2f9;
+    min-height: 200vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: var(--primary-color);
+    /* padding-top: 30px; */
+}
+
+/* Header-left */
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.flag {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.vietnam {
+    margin: 0px 10px;
+}
+
+/* Header-center */
+.header__center {
+    width: 453px;
+}
+
+.header__info {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header__info--item {
+    padding: 10px 15px;
+}
+
+.header__info--item.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+
+/* Booking */
+.booking {
+}
+
+.btn {
+    font-size: 1.4rem;
+    border-radius: 12px;
+    padding: 12px 18.3px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.booking__btn {
+    /* font-size: 1.4rem;
+    border-radius: 12px;
+    padding: 12px 18.3px;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.2s linear; */
+}
+
+/* .booking__btn:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+} */
+
+/* Flights */
+.flight {
+    width: 1512px;
+    max-width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.flight__from__to {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-left: 90px;
+}
+
+/* .flight__from__to, */
+.flight__type,
+.change__flights {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.flight__from--title,
+.flight__to--title {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.flight__from--datetime,
+.flight__to--datetime {
+    font-size: 1.2rem;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.arrow__container {
+    margin: 0 36px;
+    position: relative;
+    width: 50px;
+    height: 37px;
+}
+
+.arrow__container i {
+    position: absolute;
+    font-size: 1.6rem;
+    /* background-color: #000000; */
+    opacity: 0.5;
+}
+
+.arrow__container__left--icon {
+    left: 15px;
+    top: 5px;
+}
+
+.arrow__container__right--icon {
+    left: 15px;
+    top: 15px;
+}
+
+.flight__type {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 31px;
+}
+
+.flight__type .type,
+.flight__type .passengers {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.passengers__quantity--text,
+.type,
+.class {
+    font-size: 1.4rem;
+}
+
+.type,
+.passengers,
+.class {
+    padding: 2px 12px;
+}
+
+.passengers__quantity--text span {
+    color: var(--primary-color);
+}
+
+.change__flights {
+    justify-content: space-around;
+}
+
+.change__btn {
+    padding: 12px 22.3px;
+    background: #f06336;
+    border-radius: 12px;
+    color: #fff;
+    border: 1px solid #f06336;
+    margin-left: 28px;
+}
+
+.change__btn span {
+    margin-right: 14px;
+}
+
+.list {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 16px;
+}
+
+.list__left {
+    width: 70%;
+}
+
+.list__right {
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 24px;
+}
+
+.list__left--filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 22px 0 12px;
+}
+
+.list__left--filter--title {
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.5;
+    width: 120px;
+    height: 34px;
+    background-color: #f4f2f9;
+    line-height: 40px;
+}
+
+.filter__transit,
+.filter__time,
+.filter__airline,
+.filter__price {
+    margin-right: 10px;
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    border-radius: 12px;
+    /* flex: 1; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.select__transit,
+.select__time,
+.select__airline,
+.select__price {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.filter__transit select,
+.filter__time select,
+.filter__airline select,
+.filter__price select {
+    appearance: none;
+    /* padding: 8px 28px; */
+    /* width: 100%; */
+}
+
+/* List left item */
+
+.list__left--item {
+    position: relative;
+    width: 100%;
+    /* max-width: 100%; */
+    height: 130px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.list__left--item.active {
+    height: 311px;
+}
+
+.list__item--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left__item--top {
+    display: flex;
+    align-items: center;
+}
+
+.logo__brand--container {
+    display: flex;
+    align-items: center;
+}
+
+/* .logo__brand--container, */
+.direct,
+.fee {
+    flex: 1;
+}
+
+.brand__logo {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.brand__logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.brand__name {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.direct {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 54px;
+}
+
+.time {
+    text-align: center;
+}
+
+.process {
+    width: 60px;
+    text-align: center;
+}
+
+.estimate,
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.line__circle {
+    position: relative;
+}
+
+.circle {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+}
+
+.circle__solid {
+    position: absolute;
+    left: -11px;
+    top: -3px;
+}
+
+.circle__fill {
+    position: absolute;
+    right: -14px;
+    top: -3px;
+    background-color: var(--primary-color);
+}
+
+.line {
+    position: absolute;
+    width: 72px;
+    display: block;
+    height: 1px;
+    background-color: var(--primary-color);
+    left: -5px;
+}
+.tag {
+    margin-top: 6px;
+    padding: 3.5px 5.4px;
+    font-size: 1rem;
+}
+
+.time p {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.fee {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.fee__1,
+.fee__2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.fee__1--left,
+.fee__2--left {
+    display: flex;
+    align-items: baseline;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.fee__1--icon,
+.fee__2--icon {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.title span {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.title,
+.price {
+    /* font-weight: 500; */
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.price {
+    justify-self: end;
+}
+
+.price del {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.price span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #f06336;
+}
+
+.choose__btn {
+    padding: 8px 16.3px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    border: 1px solid #f06336;
+    color: #f06336;
+    background: rgba(240, 99, 54, 0.1);
+}
+
+/* Left item tabs */
+.left__item--tabs {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tabs__title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 18px;
+    text-transform: uppercase;
+    flex: 1;
+    cursor: pointer;
+}
+
+.underline {
+    width: 76%;
+    height: 1px;
+    background: var(--primary-color);
+    display: none;
+}
+
+.underline__2 {
+    width: 52%;
+    height: 1px;
+    background: var(--primary-color);
+    display: none;
+}
+
+.tabs__title.active,
+.tabs__title--2.active {
+    /* text-decoration: underline; */
+    color: var(--primary-color);
+}
+
+.tabs__title.active .underline,
+.tabs__title.active .underline__2 {
+    display: block;
+}
+
+.tabs__line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    /* flex-grow: 0; */
+    flex: 5;
+}
+
+/* Flight detail tab */
+
+.flight__detail--tab,
+.flight__fare__info--tab {
+    /* display: flex; */
+    align-items: center;
+    display: none;
+}
+
+.flight__detail--tab.active,
+.flight__fare__info--tab.active {
+    display: flex;
+}
+
+.flight__fare__info--tab {
+    height: 172px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 20;
+    width: 807.94px;
+    top: 124.9px;
+}
+
+.flight__detail--tab--direct--left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* text-align: left; */
+    height: 172px;
+    /* flex: 1; */
+}
+
+.dep__ret--container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.time {
+    text-align: center;
+}
+
+.process__flight--detail {
+    width: 60px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.estimate,
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.line__circle {
+    position: relative;
+}
+
+.circle {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+}
+
+.circle__solid__flight--detail {
+    position: absolute;
+    left: -31px;
+    top: -3px;
+}
+
+.circle__fill__flight--detail {
+    position: absolute;
+    right: -16px;
+    top: -3px;
+    background-color: var(--primary-color);
+}
+
+.line__flight--detail {
+    position: absolute;
+    width: 100px;
+    display: block;
+    height: 1px;
+    background-color: var(--primary-color);
+    left: -25px;
+}
+.tag {
+    margin-top: 6px;
+    padding: 3.5px 5.4px;
+    font-size: 1rem;
+    background: rgba(77, 70, 250, 0.1);
+    border: none;
+}
+
+.time p {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.content__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.content p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.flight__detail--tab--content--to {
+    margin-top: 32px;
+}
+
+.flight__detail--tab--direct--right {
+    margin-right: -81px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 42px;
+}
+
+.flight__detail--type {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.flight__detail--logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid;
+    margin-right: 12px;
+}
+
+.flight__detail--info {
+    height: 101px;
+    width: 500px;
+}
+
+.flight__detail--info--item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+    border-radius: 12px;
+    background-color: #f4f2f9;
+    padding: 20px;
+}
+
+.item__1 {
+    margin-right: 60px;
+    /* display: none; */
+}
+
+.item__2 {
+    margin-left: 38px;
+}
+
+/* fare info tab */
+.flight__fare__info--type {
+    display: flex;
+    align-items: center;
+    /* margin-top: 17px; */
+}
+
+.flight__fare__info--tab--left {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.destination__wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.destination__name {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+}
+
+.destination__type {
+    color: var(--primary-color);
+}
+
+.process__flight__fare__info {
+    margin: 0 12px;
+}
+
+.line__circle__flight__fare__info {
+    width: 50px;
+    position: relative;
+}
+
+.circle__solid__flight__fare__info {
+    position: relative;
+    left: -7px;
+}
+
+.circle__fill__flight__fare__info {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 3px;
+    left: 100%;
+    transform: translateX(-50%);
+}
+
+.line__flight__fare__info {
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: var(--primary-color);
+    top: 6px;
+}
+
+.flight__fare__info--tab--left,
+.flight__fare__info--tab--right {
+    flex: 1;
+}
+
+.price__info {
+    width: 369px;
+}
+
+.price__info--container {
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    line-height: 2.2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.price__info--title {
+    margin-right: 169px;
+}
+
+.you__pay {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 24px;
+}
+
+.orange {
+    color: #f06336;
+}
+
+/* List right */
+.list__right {
+    width: 270px;
+    height: 390px;
+    background: #ffffff;
+    border-radius: 12px;
+    /* padding: 10px; */
+}
+
+.list__right--title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 20px 10px 20px;
+}
+
+.your__flight--info {
+    /* padding: 20px; */
+}
+
+.section__1,
+.section__2 {
+    display: flex;
+    align-items: center;
+}
+
+.circle__number,
+.circle__number__2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #979797;
+    position: relative;
+    margin-right: 14px;
+}
+
+.circle__number__2 {
+    background-color: var(--primary-color);
+}
+
+.number,
+.number__2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section__1--info-date,
+.section__1--info-destination,
+.section__2--info-date,
+.section__2--info-destination {
+    font-size: 1.4rem;
+    line-height: 21px;
+}
+
+.section__1--info-date,
+.section__2--info-date {
+    font-weight: 400;
+}
+
+.section__1--info-destination,
+.section__2--info-destination {
+    font-weight: 600;
+}
+
+.section__1__brand__logo {
+    margin-right: 14px;
+}
+
+.section__1,
+.logo__brand--container,
+.change__flight__btn,
+.section__2 {
+    /* margin-bottom: 10px;
+    margin-left: 20px; */
+
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 10px 10px 5px 10px;
+}
+
+.section__1__direct {
+    margin-left: -5px;
+}
+
+.change__flight__btn {
+    padding: 10.4px 52.3px;
+    font-size: 12px;
+    background: rgba(77, 70, 250, 0.1);
+    border-radius: 12px;
+    border: none;
+}
+
+.subtotal {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+    margin-top: 30px;
+    padding: 20px;
+
+    height: 72px;
+    background: #f8f8f8;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.subtotal span {
+    color: #f06336;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact,
+.social {
+    flex: 1;
+}
+
+.social p {
+}
+
+.contact {
+    margin-left: 74px;
+}
+
+.social {
+    margin-left: 354px;
+}
+
+.email {
+    margin-left: 30px;
+}
+
+.contact,
+.social,
+.phone,
+.email,
+.facebook,
+.instagram {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.social p,
+.phone,
+.email {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.phone,
+.email,
+.facebook,
+.instagram {
+    justify-content: space-around;
+}
+
+.phone__icon,
+.mailbox__icon,
+.facebook__icon,
+.instagram__icon {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.line__social {
+    width: 40px;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin: 0px 10px;
+}
+
+.facebook__icon {
+    margin-right: 6px;
+}

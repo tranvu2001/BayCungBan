@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF__8">
+    <meta http__equiv="X__UA__Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device__width, initial__scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font__awesome/6.3.0/css/all.min.css" integrity="sha512__SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no__referrer" /> -->
+    <title>Baycungban</title>
+    <link rel="stylesheet" href="/assest/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assest/css/base.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <script src="/assest/js/home.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header start -->
+        <header class="header">
+            <div class="header__left">
+                <div class="logo">
+                    <p>Baycungban</p>
+                </div>
+                <div class="languages">
+                    <img src="./assest/flags/vietnam.png" alt='vn' class="flag vietnam"/>
+                    <img src="./assest/flags/usa.png" alt='usa' class="flag usa"/>
+                </div>
+            </div>
+            <div class="header__center">
+                <ul class="header__info">
+                    <li>Promotion</li>
+                    <li><a href="/list.html">Flight Schedule</a></li>
+                    <li>About Us</li>
+                    <li>Payment Guide</li>
+                </ul>
+            </div>
+            <div class="booking">
+                <button class="btn booking__btn ">Booking now</button>
+            </div>
+        </header>
+        <!--  Header end -->
+        
+         <!-- Text desc start -->
+            <div class="text__wrapper--container">
+                <p>Hello</p>
+                <p>Where are</p>
+                <p>you <span>flying</span> to ...</p>
+            </div>
+        <!-- Text desc end -->
+
+        <!-- Flight info start -->
+        <div class="flight__info">
+            <div class="flight__info--top">
+                <div class="search__flight--form">
+                    <div class="flight__type">
+                        <div class="type-1">
+                            <label class="container" for="oneway__roundtrip">One way / Round trip
+                                <input type="radio" id="oneway__roundtrip" name="radio"/>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="type-2">
+                            <label class="container" for="mutlti-city">Multi-city
+                                <input type="radio" id="mutlti-city" name="radio"/>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="passengers">
+                            <div class="passengers__quantity">
+                                <p class="passengers__quantity--text">
+                                    <span class="adult__quantity">0</span> Adult, 
+                                    <span class="children__quantity">0</span> children</p>
+                                <i class="passengers__quantity--icon fa-solid fa-caret-down"></i>
+                            </div>
+                            <div class="passengers__form ">
+                                <div class="passengers-adult">
+                                    <i class="fa-solid fa-user passengers--icon"></i>
+                                    <div class="passengers-adult--title">
+                                        <p>Adult</p>
+                                        <span>>= 12 year olds</span>
+                                    </div>
+                                    <div class="select-adult">
+                                        <button class="select-btn--decrease--adult">-</button>
+                                        <span>0</span>
+                                        <button class="select-btn--increase--adult">+</button>
+                                    </div>
+                                </div>
+                                <div class="passengers-children">
+                                    <i class="fa-solid fa-user passengers--icon"></i>
+                                    <div class="passengers-adult--title">
+                                        <p>Children</p>
+                                        <span>>= 2 year olds & < 12 year olds </span>
+                                    </div>
+                                    <div class="select-children">
+                                        <button class="select-btn--decrease--children">-</button>
+                                        <span>0</span>
+                                        <button class="select-btn--increase--children">+</button>
+                                    </div>
+                                </div>
+                                <!-- <div class="passengers-baby">
+                                    <i class="fa-solid fa-user passengers--icon"></i>
+                                    <div class="passengers-baby--title">
+                                        <p>Baby</p>
+                                        <span> < 2 year olds </span>
+                                    </div>
+                                    <div class="select-baby">
+                                        <button class="select-btn--decrease--baby">-</button>
+                                        <span>0</span>
+                                        <button class="select-btn--increase--baby">+</button>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="class__type">
+                            <select name="class" class="class__type--container">
+                                <option value="Business class">Business class</option>
+                                <option value="Economy class">Economy class</option>
+                            </select>
+                            <i class="class__type--icon fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="flight__info--bottom">
+                <div class="flight__info--from-to">
+                    <div class="card__from">
+                        <p class="card__from--title">FROM</p>
+                        <p class="card__from--location">Da Nang</p>
+                        <p class="card__from--country">Quang Nam, Viet Nam</p>
+                    </div>
+                    <div class="rectangle-1"></div>
+                    <div class="circle">
+                        <i class="circle__left--icon fa-solid fa-arrow-left-long"></i>
+                        <i class="circle__right--icon fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="rectangle-2"></div>
+                    <div class="card__to">
+                        <p class="card__to--title">TO</p>
+                        <p class="card__to--location">Ho Chi Minh</p>
+                        <p class="card__to--country">Viet Nam</p>
+                    </div>
+                </div >
+                <div class="flight__info--time">
+                    <div class="time__container">
+                        <div class="departure">
+                            <p class="departure__title">DEPARTURE</p>
+                            <input type="date" class="departure__input"/>
+                            <div class="departure__action">
+                                <button class="departure__action--prev action">Prev</button>
+                                <button class="departure__action--next">Next</button>
+                            </div>
+                        </div>
+                        <div class="return">
+                            <p class="return__title">RETURN</p>
+                            <input type="date" class="return__input"/>
+                            <div class="return__action">
+                                <button class="return__action--prev">Prev</button>
+                                <button class="return__action--next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn search__btn">
+                <p>Search Flights</p>
+                <i class="fa-solid fa-arrow-right"></i>
+                
+            </button>
+        </div>
+        <!-- FLight info end -->
+
+        <!-- Footer start -->
+        <div class="footer">
+            <div class="contact">
+                <div class="phone">
+                    <i class="phone__icon fa-solid fa-phone"></i>
+                    <p>Call us: +84 908 02 02 58</p>
+                </div>
+                <div class="email">
+                    <i class="mailbox__icon fa-solid fa-envelope"></i>
+                    <p>Email: Chucinog@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="social">
+                <p>Follow us</p>
+                <div class="line"></div>
+                <div class="facebook">
+                    <i class="facebook__icon fa-brands fa-facebook"></i>
+                </div>
+                <div class="instagram">
+                    <i class="instagram__icon fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Footer end -->
+    </div>
+</body>
+</html>

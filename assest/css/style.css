@@ -1,0 +1,575 @@
+.wrapper {
+    position: relative;
+    width: 1512px;
+    max-width: 100%;
+    background: url(/assest/images/background-homepage.jpg);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* object-fit: contain; */
+    height: 816px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+/* Header-left */
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo p {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.flag {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.vietnam {
+    margin: 0px 10px;
+}
+
+/* Header-center */
+.header__center {
+    width: 453px;
+}
+
+.header__info {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Booking */
+.booking {
+}
+
+.btn {
+    font-size: 1.4rem;
+    border-radius: 12px;
+    padding: 12px 18.3px;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.booking__btn {
+    /* font-size: 1.4rem;
+    border-radius: 12px;
+    padding: 12px 18.3px;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.2s linear; */
+}
+
+.booking__btn:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+/* Text desc */
+.text__wrapper--container {
+    position: absolute;
+    left: 82px;
+    top: 133px;
+
+    font-size: 7.2rem;
+    font-weight: 300;
+    line-height: 104px;
+}
+
+.text__wrapper--container p span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Flight-info */
+.flight__info {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1230px;
+    height: 224px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 30px rgba(77, 70, 250, 0.1);
+    left: 18px;
+    bottom: -56px;
+    padding: 38px;
+}
+
+/* FLight__info--top */
+.flight__type {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.type-1 label {
+    margin-right: 14px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196f3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 5.2px;
+    left: 5.6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+}
+
+.passengers {
+    cursor: pointer;
+    position: relative;
+    margin-left: 36px;
+}
+
+.passengers__form.active {
+    display: block;
+    animation: showModal 0.2s linear;
+}
+
+.passengers__form {
+    display: none;
+    position: absolute;
+    width: 418px;
+    height: 170px;
+    box-shadow: 0px 4px 30px rgba(77, 70, 250, 0.1);
+    padding: 16px;
+    cursor: unset;
+    background-color: #fff;
+    z-index: 40;
+    border-radius: 12px;
+}
+
+.passengers-adult,
+.passengers-children,
+.passengers-baby {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #9fa0a2;
+}
+
+.passengers-adult p,
+.passengers-children p,
+.passengers-baby p {
+    font-size: 1.4rem;
+}
+
+.passengers-adult span,
+.passengers-children span,
+.passengers-baby span {
+    font-size: 1.2rem;
+}
+
+.passengers--icon {
+    padding-right: 16px;
+}
+
+.select-adult,
+.select-children,
+.select-baby {
+    /* margin-right: 10px; */
+    flex: 1;
+    text-align: right;
+    font-weight: 300;
+}
+
+.select-adult button,
+.select-children button,
+.select-baby button {
+    border: none;
+    background-color: var(--primary-color);
+    width: 33px;
+    height: 33px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.select-adult span,
+.select-children span,
+.select-baby span {
+    margin: 0 14px;
+    font-size: 1.6rem;
+}
+
+.class__type {
+    margin-left: 51px;
+}
+
+.passengers__quantity,
+.class__type {
+    display: flex;
+    align-items: center;
+    /* width: 134px; */
+    height: 21px;
+}
+
+.passengers__quantity--text {
+    font-size: 1.4rem;
+}
+
+.passengers__quantity--text span {
+    color: var(--primary-color);
+}
+
+.passengers__quantity--icon,
+.class__type--icon {
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.class__type--container {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.class__type select {
+    appearance: none;
+}
+
+/* Flight__info--bottom */
+.flight__info--bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.flight__info--from-to {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card__from {
+    position: relative;
+    padding: 18px 0px 18px 18px;
+}
+
+.rectangle-1 {
+    width: 60px;
+    height: 60px;
+    /* clip-path: circle(29% at 30% 50%); */
+    /* background-color: red; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 269px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    z-index: 20;
+    /* border-top-width: 0px;
+    border-left-width: 0px; */
+    background-color: #fff;
+    border-top-color: transparent;
+    border-right-color: rgba(0, 0, 0, 0.1);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-left-color: transparent;
+    transform: rotate(135deg);
+}
+
+.rectangle-2 {
+    /* display: none; */
+    width: 60px;
+    height: 60px;
+    /* clip-path: circle(29% at 30% 50%); */
+    /* background-color: red; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 277px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    z-index: 20;
+
+    background-color: #fff;
+    border-top-color: transparent;
+    border-right-color: rgba(0, 0, 0, 0.1);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-left-color: transparent;
+    transform: rotate(315deg);
+    z-index: 20;
+}
+
+/* .card__from::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(10% at 101% 49%);
+    background-color: red;
+    top: 0px;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 10;
+} */
+
+.circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    z-index: 30;
+}
+
+.circle__left--icon,
+.circle__right--icon {
+    position: absolute;
+    font-size: 1.8rem;
+}
+
+.circle__left--icon {
+    top: 26%;
+    left: -6px;
+}
+
+.circle__right--icon {
+    top: 48%;
+    left: -5px;
+}
+
+.card__from,
+.card__to {
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.card__to {
+    padding: 18px 0px 18px 50px;
+    margin-left: -52px;
+}
+
+.card__from--title,
+.card__to--title,
+.departure__title,
+.return__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.8;
+    letter-spacing: 0.1rem;
+    color: #000000;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.card__from--location,
+.card__to--location {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+}
+
+.card__from--country,
+.card__to--country {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+}
+
+/* Flight info time */
+
+.flight__info--time {
+    margin-left: 10px;
+}
+
+.time__container {
+    padding: 18px;
+    width: 530px;
+    height: 100px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.departure,
+.return {
+    flex: 1;
+}
+
+.departure__action--prev,
+.return__action--prev,
+.departure__action--next,
+.return__action--next {
+    position: relative;
+    margin-top: 8px;
+}
+
+.departure__action--prev::before {
+    content: "";
+    position: absolute;
+    height: 1.4px;
+    width: 100%;
+    /* z-index: 20; */
+    top: 16px;
+    background-color: #000000;
+    opacity: 0.5;
+    /* display: none; */
+}
+
+.departure__action--prev.active > .departure__action--prev::before {
+    background-color: red;
+}
+
+.departure__action--prev,
+.return__action--prev {
+    border: none;
+    background-color: transparent;
+    margin-right: 18px;
+}
+
+.departure__action--next,
+.return__action--next {
+    border: none;
+    background-color: transparent;
+}
+
+/* Search btn */
+.search__btn {
+    width: 245px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    right: 40px;
+    bottom: -28px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin-top: 870px;
+}
+
+.contact,
+.social {
+    flex: 1;
+}
+
+.social p {
+}
+
+.contact {
+    margin-left: 74px;
+}
+
+.social {
+    margin-left: 354px;
+}
+
+.email {
+    margin-left: 30px;
+}
+
+.contact,
+.social,
+.phone,
+.email,
+.facebook,
+.instagram {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.social p,
+.phone,
+.email {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.phone,
+.email,
+.facebook,
+.instagram {
+    justify-content: space-around;
+}
+
+.phone__icon,
+.mailbox__icon,
+.facebook__icon,
+.instagram__icon {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.line {
+    width: 40px;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin: 0px 10px;
+}
+
+.facebook__icon {
+    margin-right: 6px;
+}

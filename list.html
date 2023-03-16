@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="/assest/fonts/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assest/css/base.css">
+    <link rel="stylesheet" href="./assest/css/list.css">
+    <script src="/assest/js/list.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header start -->
+        <header class="header">
+            <div class="header__left">
+                <div class="logo">
+                    <p>Baycungban</p>
+                </div>
+                <div class="languages">
+                    <img src="./assest/flags/vietnam.png" alt='vn' class="flag vietnam"/>
+                    <img src="./assest/flags/usa.png" alt='usa' class="flag usa"/>
+                </div>
+            </div>
+            <div class="header__center">
+                <ul class="header__info">
+                    <li class="header__info--item">Promotion</li>
+                    <li class="header__info--item active">Flight Schedule</li>
+                    <li class="header__info--item">About Us</li>
+                    <li class="header__info--item">Payment Guide</li>
+                </ul>
+            </div>
+            <div class="booking">
+                <button class="btn booking__btn ">Booking now</button>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- flight start -->
+        <div class="flight">
+            <div class="flight__from__to">
+                <div class="flight__from">
+                    <h3 class="flight__from--title">Da Nang (DAD)</h3>
+                    <p class="flight__from--datetime">Fri,22 Mar, 2022</p>
+                </div>
+    
+                <div class="arrow__container">
+                    <i class="arrow__container__left--icon fa-solid fa-arrow-left-long"></i>
+                    <i class="arrow__container__right--icon fa-solid fa-arrow-right-long"></i>
+                </div>
+    
+                <div class="flight__to">
+                    <h3 class="flight__to--title">Ho Chi Minh (SGN)</h3>
+                    <p class="flight__to--datetime">Fri,22 Mar, 2022</p>
+                </div>
+            </div>
+
+            <div class="flight__type">
+                <div class="type">Round-trip</div>
+                <div class="passengers">
+                    <p class="passengers__quantity--text">
+                        <span class="adult__quantity">02</span> Adult, 
+                        <span class="children__quantity">01</span> children</p>
+                </div>
+                <div class="class">Business Class</div>
+            </div>
+            <div class="change__flights">
+                <button class="btn change__btn">
+                    <span>Change Flights</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <!-- flight end -->
+
+        <!-- List start -->
+        <div class="list">
+            <div class="list__left">
+                <div class="list__left--filter">
+                    <h3 class="list__left--filter--title">FILTER</h3>
+                    <div class="filter__transit">
+                        <select class="select__transit">
+                            <option>Transit</option>
+                            <option>Transit</option>
+                            <option>Transit</option>
+                        </select>
+                        <i class="class__type--icon fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="filter__time">
+                        <select class="select__time">
+                            <option value="00:00 - 06:00">00:00 - 06:00</option>
+                            <option value="06:00 - 12:00">06:00 - 12:00</option>
+                            <option value="12:00 - 18:00">12:00 - 18:00</option>
+                            <option value="18:00 - 24:00">18:00 - 24:00</option>
+                        </select>
+                        <i class="class__type--icon fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="filter__airline">
+                        <select class="select__airline">
+                            <option value="VietJet Air">VietJet Air</option>
+                            <option value="Bamboo Airways">Bamboo Airways</option>
+                            <option value="Pacific Airlines">Pacific Airlines</option>
+                            <option value="VietNam Airlines">VietNam Airlines</option>
+                        </select>
+                        <i class="class__type--icon fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="filter__price">
+                        <select class="select__price">
+                            <option value="Low price">Low price</option>
+                            <option value="Medium price">Medium price</option>
+                            <option value="High price">High price</option>
+                        </select>
+                        <i class="class__type--icon fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="list__left--item">
+                    <div class="left__item--top">
+                        <div class="logo__brand--container">
+                            <img
+                                alt='brand'
+                                src="./assest/images/brands/bamboo.jpg"
+                                class="brand__logo"
+                            />
+                            <h3 class="brand__name">BAMBOO AIRWAY</h3>
+                        </div>
+
+                        <div class="direct">
+                            <div class="dep__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+
+                            <div class="process">
+                                <span class="estimate">1h 30m</span>
+                                <div class="line__circle">
+                                    <span class="circle circle__solid"></span>
+                                    <span class="line"></span>
+                                    <span class="circle circle__fill"></span>
+                                </div>
+                                <span class="text">Direct</span>
+                            </div>
+
+                            <div class="ret__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fee">
+                            <div class="fee__1">
+                                <div class="fee__1--left">
+                                    <i class="fee__1--icon fa-solid fa-suitcase"></i>
+                                    <div class="title">Baggage <span>20</span></div>
+                                </div>
+                                <div class="fee__2--left">
+                                    <i class="fee__2--icon fa-solid fa-utensils"></i>
+                                    <div class="title">In-flight <span>Meal</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fee__2">
+                                <div class="price"><del>1,326,00 vnd</del></div>
+                                <div class="price"><span>1,322,00 vnd</span></div>
+                            </div>
+                        </div>
+
+                        <button class="btn choose__btn">Choose</button>
+                    </div>
+                    <div class="left__item--tabs">
+                        <div class="tabs__title  flight__detail ">
+                            <p>FLIGHT DETAIL</p>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="tabs__title flight__fare__info">
+                            <p>FARE INFO</p>
+                            <span class="underline__2"></span>
+                        </div>
+                        <div class="tabs__line"></div>
+                    </div>
+                    <div class="flight__detail--tab">
+                        <div class="flight__detail--tab--direct--left">
+                            <div class="dep__ret--container">
+                                <div class="dep__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+    
+                                <span class="estimate">1h 30m</span>
+    
+                                <div class="ret__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process__flight--detail">
+                                <div class="line__circle__flight--detail">
+                                    <span class="circle circle__solid__flight--detail"></span>
+                                    <span class="line__flight--detail"></span>
+                                    <span class="circle circle__fill__flight--detail"></span>
+                                </div>
+                            </div>
+
+                            <div class="content__wrapper">
+                                <div class="content flight__detail--tab--content--from">
+                                    <h3>Da Nang (DAD)</h3>
+                                    <p>Da Nang Airport</p>
+                                </div>
+    
+                                <div class="content flight__detail--tab--content--to">
+                                    <h3>Ho Chi Minh City (SGN)</h3>
+                                    <p>Tansonnhat Intl</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flight__detail--tab--direct--right">
+                            <div class="flight__detail--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="flight__detail--info">
+                                <div class="flight__detail--info--item">
+                                    <div class="item__1">
+                                        <div class="title">Baggage <span>20kg</span></div>
+                                        <div class="title">In-flight <span>Meal</span></div>
+                                        <div class="title">In-flight <span>Entertainment</span></div>
+                                    </div>
+                                    <div class="item__2">
+                                        <div class="title">Aircraft <span>Airbus A321</span></div>
+                                        <div class="title">Seat layout <span>3-3</span></div>
+                                        <div class="title">Seat pitch <span>29 inches (standard)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight__fare__info--tab">
+                        <div class="flight__fare__info--tab--left">
+                            <h3>CONDITON</h3>
+                            <div class="flight__fare__info--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="destination__wrapper">
+                                <div class="detination__from">
+                                    <p class="destination__name">Da Nang</p>
+                                    <span class="destination__type">Economy</span>
+                                </div>
+                                <div class="process__flight__fare__info">
+                                    <div class="line__circle__flight__fare__info">
+                                        <span class="circle circle__solid__flight__fare__info"></span>
+                                        <span class="line__flight__fare__info"></span>
+                                        <span class="circle circle__fill__flight__fare__info"></span>
+                                    </div>
+                                </div>
+                                <div class="detination__to"><p class="destination__name">Ho Chi Minh City</p></div>
+
+                            </div>
+
+                            <div class="refund__type">
+                                Non - Refundable
+                            </div>
+
+
+
+                        </div>
+                        <div class="flight__fare__info--tab--right">
+                            <h3>PRICE DETAILS</h3>
+                            <div class="price__info">
+                                <div class="price__info--container">
+                                    <div class="price__info--title">
+                                        <p>Adult Basic Fare (x1)</p>
+                                        <p>Tax</p>
+                                        <p>Regular Total Price</p>
+                                        <p class="orange">Save</p>
+                                    </div>
+    
+                                    <div class="price__info--money">
+                                        <p>1,326,000 vnd</p>
+                                        <p>included</p>
+                                        <p>1,326,000 vnd</p>
+                                        <p>-4000 vnd</p>
+                                    </div>
+                                </div>
+                                <div class="you__pay">
+                                    <p>You pay</p>
+                                    <p class="orange">1,322,000 vnd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list__left--item">
+                    <div class="left__item--top">
+                        <div class="logo__brand--container">
+                            <img
+                                alt='brand'
+                                src="./assest/images/brands/bamboo.jpg"
+                                class="brand__logo"
+                            />
+                            <h3 class="brand__name">BAMBOO AIRWAY</h3>
+                        </div>
+
+                        <div class="direct">
+                            <div class="dep__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+
+                            <div class="process">
+                                <span class="estimate">1h 30m</span>
+                                <div class="line__circle">
+                                    <span class="circle circle__solid"></span>
+                                    <span class="line"></span>
+                                    <span class="circle circle__fill"></span>
+                                </div>
+                                <span class="text">Direct</span>
+                            </div>
+
+                            <div class="ret__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fee">
+                            <div class="fee__1">
+                                <div class="fee__1--left">
+                                    <i class="fee__1--icon fa-solid fa-suitcase"></i>
+                                    <div class="title">Baggage <span>20</span></div>
+                                </div>
+                                <div class="fee__2--left">
+                                    <i class="fee__2--icon fa-solid fa-utensils"></i>
+                                    <div class="title">In-flight <span>Meal</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fee__2">
+                                <div class="price"><del>1,326,00 vnd</del></div>
+                                <div class="price"><span>1,322,00 vnd</span></div>
+                            </div>
+                        </div>
+
+                        <button class="btn choose__btn">Choose</button>
+                    </div>
+                    <div class="left__item--tabs">
+                        <div class="tabs__title  flight__detail ">
+                            <p>FLIGHT DETAIL</p>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="tabs__title flight__fare__info">
+                            <p>FARE INFO</p>
+                            <span class="underline__2"></span>
+                        </div>
+                        <div class="tabs__line"></div>
+                    </div>
+                    <div class="flight__detail--tab">
+                        <div class="flight__detail--tab--direct--left">
+                            <div class="dep__ret--container">
+                                <div class="dep__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+    
+                                <span class="estimate">1h 30m</span>
+    
+                                <div class="ret__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process__flight--detail">
+                                <div class="line__circle__flight--detail">
+                                    <span class="circle circle__solid__flight--detail"></span>
+                                    <span class="line__flight--detail"></span>
+                                    <span class="circle circle__fill__flight--detail"></span>
+                                </div>
+                            </div>
+
+                            <div class="content__wrapper">
+                                <div class="content flight__detail--tab--content--from">
+                                    <h3>Da Nang (DAD)</h3>
+                                    <p>Da Nang Airport</p>
+                                </div>
+    
+                                <div class="content flight__detail--tab--content--to">
+                                    <h3>Ho Chi Minh City (SGN)</h3>
+                                    <p>Tansonnhat Intl</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flight__detail--tab--direct--right">
+                            <div class="flight__detail--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="flight__detail--info">
+                                <div class="flight__detail--info--item">
+                                    <div class="item__1">
+                                        <div class="title">Baggage <span>20kg</span></div>
+                                        <div class="title">In-flight <span>Meal</span></div>
+                                        <div class="title">In-flight <span>Entertainment</span></div>
+                                    </div>
+                                    <div class="item__2">
+                                        <div class="title">Aircraft <span>Airbus A321</span></div>
+                                        <div class="title">Seat layout <span>3-3</span></div>
+                                        <div class="title">Seat pitch <span>29 inches (standard)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight__fare__info--tab">
+                        <div class="flight__fare__info--tab--left">
+                            <h3>CONDITON</h3>
+                            <div class="flight__fare__info--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="destination__wrapper">
+                                <div class="detination__from">
+                                    <p class="destination__name">Da Nang</p>
+                                    <span class="destination__type">Economy</span>
+                                </div>
+                                <div class="process__flight__fare__info">
+                                    <div class="line__circle__flight__fare__info">
+                                        <span class="circle circle__solid__flight__fare__info"></span>
+                                        <span class="line__flight__fare__info"></span>
+                                        <span class="circle circle__fill__flight__fare__info"></span>
+                                    </div>
+                                </div>
+                                <div class="detination__to"><p class="destination__name">Ho Chi Minh City</p></div>
+
+                            </div>
+
+                            <div class="refund__type">
+                                Non - Refundable
+                            </div>
+
+
+
+                        </div>
+                        <div class="flight__fare__info--tab--right">
+                            <h3>PRICE DETAILS</h3>
+                            <div class="price__info">
+                                <div class="price__info--container">
+                                    <div class="price__info--title">
+                                        <p>Adult Basic Fare (x1)</p>
+                                        <p>Tax</p>
+                                        <p>Regular Total Price</p>
+                                        <p class="orange">Save</p>
+                                    </div>
+    
+                                    <div class="price__info--money">
+                                        <p>1,326,000 vnd</p>
+                                        <p>included</p>
+                                        <p>1,326,000 vnd</p>
+                                        <p>-4000 vnd</p>
+                                    </div>
+                                </div>
+                                <div class="you__pay">
+                                    <p>You pay</p>
+                                    <p class="orange">1,322,000 vnd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list__left--item">
+                    <div class="left__item--top">
+                        <div class="logo__brand--container">
+                            <img
+                                alt='brand'
+                                src="./assest/images/brands/bamboo.jpg"
+                                class="brand__logo"
+                            />
+                            <h3 class="brand__name">BAMBOO AIRWAY</h3>
+                        </div>
+
+                        <div class="direct">
+                            <div class="dep__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+
+                            <div class="process">
+                                <span class="estimate">1h 30m</span>
+                                <div class="line__circle">
+                                    <span class="circle circle__solid"></span>
+                                    <span class="line"></span>
+                                    <span class="circle circle__fill"></span>
+                                </div>
+                                <span class="text">Direct</span>
+                            </div>
+
+                            <div class="ret__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fee">
+                            <div class="fee__1">
+                                <div class="fee__1--left">
+                                    <i class="fee__1--icon fa-solid fa-suitcase"></i>
+                                    <div class="title">Baggage <span>20</span></div>
+                                </div>
+                                <div class="fee__2--left">
+                                    <i class="fee__2--icon fa-solid fa-utensils"></i>
+                                    <div class="title">In-flight <span>Meal</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fee__2">
+                                <div class="price"><del>1,326,00 vnd</del></div>
+                                <div class="price"><span>1,322,00 vnd</span></div>
+                            </div>
+                        </div>
+
+                        <button class="btn choose__btn">Choose</button>
+                    </div>
+                    <div class="left__item--tabs">
+                        <div class="tabs__title  flight__detail ">
+                            <p>FLIGHT DETAIL</p>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="tabs__title flight__fare__info">
+                            <p>FARE INFO</p>
+                            <span class="underline__2"></span>
+                        </div>
+                        <div class="tabs__line"></div>
+                    </div>
+                    <div class="flight__detail--tab">
+                        <div class="flight__detail--tab--direct--left">
+                            <div class="dep__ret--container">
+                                <div class="dep__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+    
+                                <span class="estimate">1h 30m</span>
+    
+                                <div class="ret__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process__flight--detail">
+                                <div class="line__circle__flight--detail">
+                                    <span class="circle circle__solid__flight--detail"></span>
+                                    <span class="line__flight--detail"></span>
+                                    <span class="circle circle__fill__flight--detail"></span>
+                                </div>
+                            </div>
+
+                            <div class="content__wrapper">
+                                <div class="content flight__detail--tab--content--from">
+                                    <h3>Da Nang (DAD)</h3>
+                                    <p>Da Nang Airport</p>
+                                </div>
+    
+                                <div class="content flight__detail--tab--content--to">
+                                    <h3>Ho Chi Minh City (SGN)</h3>
+                                    <p>Tansonnhat Intl</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flight__detail--tab--direct--right">
+                            <div class="flight__detail--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="flight__detail--info">
+                                <div class="flight__detail--info--item">
+                                    <div class="item__1">
+                                        <div class="title">Baggage <span>20kg</span></div>
+                                        <div class="title">In-flight <span>Meal</span></div>
+                                        <div class="title">In-flight <span>Entertainment</span></div>
+                                    </div>
+                                    <div class="item__2">
+                                        <div class="title">Aircraft <span>Airbus A321</span></div>
+                                        <div class="title">Seat layout <span>3-3</span></div>
+                                        <div class="title">Seat pitch <span>29 inches (standard)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight__fare__info--tab">
+                        <div class="flight__fare__info--tab--left">
+                            <h3>CONDITON</h3>
+                            <div class="flight__fare__info--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="destination__wrapper">
+                                <div class="detination__from">
+                                    <p class="destination__name">Da Nang</p>
+                                    <span class="destination__type">Economy</span>
+                                </div>
+                                <div class="process__flight__fare__info">
+                                    <div class="line__circle__flight__fare__info">
+                                        <span class="circle circle__solid__flight__fare__info"></span>
+                                        <span class="line__flight__fare__info"></span>
+                                        <span class="circle circle__fill__flight__fare__info"></span>
+                                    </div>
+                                </div>
+                                <div class="detination__to"><p class="destination__name">Ho Chi Minh City</p></div>
+
+                            </div>
+
+                            <div class="refund__type">
+                                Non - Refundable
+                            </div>
+
+
+
+                        </div>
+                        <div class="flight__fare__info--tab--right">
+                            <h3>PRICE DETAILS</h3>
+                            <div class="price__info">
+                                <div class="price__info--container">
+                                    <div class="price__info--title">
+                                        <p>Adult Basic Fare (x1)</p>
+                                        <p>Tax</p>
+                                        <p>Regular Total Price</p>
+                                        <p class="orange">Save</p>
+                                    </div>
+    
+                                    <div class="price__info--money">
+                                        <p>1,326,000 vnd</p>
+                                        <p>included</p>
+                                        <p>1,326,000 vnd</p>
+                                        <p>-4000 vnd</p>
+                                    </div>
+                                </div>
+                                <div class="you__pay">
+                                    <p>You pay</p>
+                                    <p class="orange">1,322,000 vnd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list__left--item">
+                    <div class="left__item--top">
+                        <div class="logo__brand--container">
+                            <img
+                                alt='brand'
+                                src="./assest/images/brands/bamboo.jpg"
+                                class="brand__logo"
+                            />
+                            <h3 class="brand__name">BAMBOO AIRWAY</h3>
+                        </div>
+
+                        <div class="direct">
+                            <div class="dep__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+
+                            <div class="process">
+                                <span class="estimate">1h 30m</span>
+                                <div class="line__circle">
+                                    <span class="circle circle__solid"></span>
+                                    <span class="line"></span>
+                                    <span class="circle circle__fill"></span>
+                                </div>
+                                <span class="text">Direct</span>
+                            </div>
+
+                            <div class="ret__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fee">
+                            <div class="fee__1">
+                                <div class="fee__1--left">
+                                    <i class="fee__1--icon fa-solid fa-suitcase"></i>
+                                    <div class="title">Baggage <span>20</span></div>
+                                </div>
+                                <div class="fee__2--left">
+                                    <i class="fee__2--icon fa-solid fa-utensils"></i>
+                                    <div class="title">In-flight <span>Meal</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fee__2">
+                                <div class="price"><del>1,326,00 vnd</del></div>
+                                <div class="price"><span>1,322,00 vnd</span></div>
+                            </div>
+                        </div>
+
+                        <button class="btn choose__btn">Choose</button>
+                    </div>
+                    <div class="left__item--tabs">
+                        <div class="tabs__title  flight__detail ">
+                            <p>FLIGHT DETAIL</p>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="tabs__title flight__fare__info">
+                            <p>FARE INFO</p>
+                            <span class="underline__2"></span>
+                        </div>
+                        <div class="tabs__line"></div>
+                    </div>
+                    <div class="flight__detail--tab">
+                        <div class="flight__detail--tab--direct--left">
+                            <div class="dep__ret--container">
+                                <div class="dep__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+    
+                                <span class="estimate">1h 30m</span>
+    
+                                <div class="ret__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process__flight--detail">
+                                <div class="line__circle__flight--detail">
+                                    <span class="circle circle__solid__flight--detail"></span>
+                                    <span class="line__flight--detail"></span>
+                                    <span class="circle circle__fill__flight--detail"></span>
+                                </div>
+                            </div>
+
+                            <div class="content__wrapper">
+                                <div class="content flight__detail--tab--content--from">
+                                    <h3>Da Nang (DAD)</h3>
+                                    <p>Da Nang Airport</p>
+                                </div>
+    
+                                <div class="content flight__detail--tab--content--to">
+                                    <h3>Ho Chi Minh City (SGN)</h3>
+                                    <p>Tansonnhat Intl</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flight__detail--tab--direct--right">
+                            <div class="flight__detail--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="flight__detail--info">
+                                <div class="flight__detail--info--item">
+                                    <div class="item__1">
+                                        <div class="title">Baggage <span>20kg</span></div>
+                                        <div class="title">In-flight <span>Meal</span></div>
+                                        <div class="title">In-flight <span>Entertainment</span></div>
+                                    </div>
+                                    <div class="item__2">
+                                        <div class="title">Aircraft <span>Airbus A321</span></div>
+                                        <div class="title">Seat layout <span>3-3</span></div>
+                                        <div class="title">Seat pitch <span>29 inches (standard)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight__fare__info--tab">
+                        <div class="flight__fare__info--tab--left">
+                            <h3>CONDITON</h3>
+                            <div class="flight__fare__info--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="destination__wrapper">
+                                <div class="detination__from">
+                                    <p class="destination__name">Da Nang</p>
+                                    <span class="destination__type">Economy</span>
+                                </div>
+                                <div class="process__flight__fare__info">
+                                    <div class="line__circle__flight__fare__info">
+                                        <span class="circle circle__solid__flight__fare__info"></span>
+                                        <span class="line__flight__fare__info"></span>
+                                        <span class="circle circle__fill__flight__fare__info"></span>
+                                    </div>
+                                </div>
+                                <div class="detination__to"><p class="destination__name">Ho Chi Minh City</p></div>
+
+                            </div>
+
+                            <div class="refund__type">
+                                Non - Refundable
+                            </div>
+
+
+
+                        </div>
+                        <div class="flight__fare__info--tab--right">
+                            <h3>PRICE DETAILS</h3>
+                            <div class="price__info">
+                                <div class="price__info--container">
+                                    <div class="price__info--title">
+                                        <p>Adult Basic Fare (x1)</p>
+                                        <p>Tax</p>
+                                        <p>Regular Total Price</p>
+                                        <p class="orange">Save</p>
+                                    </div>
+    
+                                    <div class="price__info--money">
+                                        <p>1,326,000 vnd</p>
+                                        <p>included</p>
+                                        <p>1,326,000 vnd</p>
+                                        <p>-4000 vnd</p>
+                                    </div>
+                                </div>
+                                <div class="you__pay">
+                                    <p>You pay</p>
+                                    <p class="orange">1,322,000 vnd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list__left--item">
+                    <div class="left__item--top">
+                        <div class="logo__brand--container">
+                            <img
+                                alt='brand'
+                                src="./assest/images/brands/bamboo.jpg"
+                                class="brand__logo"
+                            />
+                            <h3 class="brand__name">BAMBOO AIRWAY</h3>
+                        </div>
+
+                        <div class="direct">
+                            <div class="dep__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+
+                            <div class="process">
+                                <span class="estimate">1h 30m</span>
+                                <div class="line__circle">
+                                    <span class="circle circle__solid"></span>
+                                    <span class="line"></span>
+                                    <span class="circle circle__fill"></span>
+                                </div>
+                                <span class="text">Direct</span>
+                            </div>
+
+                            <div class="ret__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fee">
+                            <div class="fee__1">
+                                <div class="fee__1--left">
+                                    <i class="fee__1--icon fa-solid fa-suitcase"></i>
+                                    <div class="title">Baggage <span>20</span></div>
+                                </div>
+                                <div class="fee__2--left">
+                                    <i class="fee__2--icon fa-solid fa-utensils"></i>
+                                    <div class="title">In-flight <span>Meal</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fee__2">
+                                <div class="price"><del>1,326,00 vnd</del></div>
+                                <div class="price"><span>1,322,00 vnd</span></div>
+                            </div>
+                        </div>
+
+                        <button class="btn choose__btn">Choose</button>
+                    </div>
+                    <div class="left__item--tabs">
+                        <div class="tabs__title  flight__detail ">
+                            <p>FLIGHT DETAIL</p>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="tabs__title flight__fare__info">
+                            <p>FARE INFO</p>
+                            <span class="underline__2"></span>
+                        </div>
+                        <div class="tabs__line"></div>
+                    </div>
+                    <div class="flight__detail--tab">
+                        <div class="flight__detail--tab--direct--left">
+                            <div class="dep__ret--container">
+                                <div class="dep__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+    
+                                <span class="estimate">1h 30m</span>
+    
+                                <div class="ret__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process__flight--detail">
+                                <div class="line__circle__flight--detail">
+                                    <span class="circle circle__solid__flight--detail"></span>
+                                    <span class="line__flight--detail"></span>
+                                    <span class="circle circle__fill__flight--detail"></span>
+                                </div>
+                            </div>
+
+                            <div class="content__wrapper">
+                                <div class="content flight__detail--tab--content--from">
+                                    <h3>Da Nang (DAD)</h3>
+                                    <p>Da Nang Airport</p>
+                                </div>
+    
+                                <div class="content flight__detail--tab--content--to">
+                                    <h3>Ho Chi Minh City (SGN)</h3>
+                                    <p>Tansonnhat Intl</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flight__detail--tab--direct--right">
+                            <div class="flight__detail--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="flight__detail--info">
+                                <div class="flight__detail--info--item">
+                                    <div class="item__1">
+                                        <div class="title">Baggage <span>20kg</span></div>
+                                        <div class="title">In-flight <span>Meal</span></div>
+                                        <div class="title">In-flight <span>Entertainment</span></div>
+                                    </div>
+                                    <div class="item__2">
+                                        <div class="title">Aircraft <span>Airbus A321</span></div>
+                                        <div class="title">Seat layout <span>3-3</span></div>
+                                        <div class="title">Seat pitch <span>29 inches (standard)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight__fare__info--tab">
+                        <div class="flight__fare__info--tab--left">
+                            <h3>CONDITON</h3>
+                            <div class="flight__fare__info--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="destination__wrapper">
+                                <div class="detination__from">
+                                    <p class="destination__name">Da Nang</p>
+                                    <span class="destination__type">Economy</span>
+                                </div>
+                                <div class="process__flight__fare__info">
+                                    <div class="line__circle__flight__fare__info">
+                                        <span class="circle circle__solid__flight__fare__info"></span>
+                                        <span class="line__flight__fare__info"></span>
+                                        <span class="circle circle__fill__flight__fare__info"></span>
+                                    </div>
+                                </div>
+                                <div class="detination__to"><p class="destination__name">Ho Chi Minh City</p></div>
+
+                            </div>
+
+                            <div class="refund__type">
+                                Non - Refundable
+                            </div>
+
+
+
+                        </div>
+                        <div class="flight__fare__info--tab--right">
+                            <h3>PRICE DETAILS</h3>
+                            <div class="price__info">
+                                <div class="price__info--container">
+                                    <div class="price__info--title">
+                                        <p>Adult Basic Fare (x1)</p>
+                                        <p>Tax</p>
+                                        <p>Regular Total Price</p>
+                                        <p class="orange">Save</p>
+                                    </div>
+    
+                                    <div class="price__info--money">
+                                        <p>1,326,000 vnd</p>
+                                        <p>included</p>
+                                        <p>1,326,000 vnd</p>
+                                        <p>-4000 vnd</p>
+                                    </div>
+                                </div>
+                                <div class="you__pay">
+                                    <p>You pay</p>
+                                    <p class="orange">1,322,000 vnd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list__left--item">
+                    <div class="left__item--top">
+                        <div class="logo__brand--container">
+                            <img
+                                alt='brand'
+                                src="./assest/images/brands/bamboo.jpg"
+                                class="brand__logo"
+                            />
+                            <h3 class="brand__name">BAMBOO AIRWAY</h3>
+                        </div>
+
+                        <div class="direct">
+                            <div class="dep__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+
+                            <div class="process">
+                                <span class="estimate">1h 30m</span>
+                                <div class="line__circle">
+                                    <span class="circle circle__solid"></span>
+                                    <span class="line"></span>
+                                    <span class="circle circle__fill"></span>
+                                </div>
+                                <span class="text">Direct</span>
+                            </div>
+
+                            <div class="ret__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fee">
+                            <div class="fee__1">
+                                <div class="fee__1--left">
+                                    <i class="fee__1--icon fa-solid fa-suitcase"></i>
+                                    <div class="title">Baggage <span>20</span></div>
+                                </div>
+                                <div class="fee__2--left">
+                                    <i class="fee__2--icon fa-solid fa-utensils"></i>
+                                    <div class="title">In-flight <span>Meal</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fee__2">
+                                <div class="price"><del>1,326,00 vnd</del></div>
+                                <div class="price"><span>1,322,00 vnd</span></div>
+                            </div>
+                        </div>
+
+                        <button class="btn choose__btn">Choose</button>
+                    </div>
+                    <div class="left__item--tabs">
+                        <div class="tabs__title  flight__detail ">
+                            <p>FLIGHT DETAIL</p>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="tabs__title flight__fare__info">
+                            <p>FARE INFO</p>
+                            <span class="underline__2"></span>
+                        </div>
+                        <div class="tabs__line"></div>
+                    </div>
+                    <div class="flight__detail--tab">
+                        <div class="flight__detail--tab--direct--left">
+                            <div class="dep__ret--container">
+                                <div class="dep__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+    
+                                <span class="estimate">1h 30m</span>
+    
+                                <div class="ret__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process__flight--detail">
+                                <div class="line__circle__flight--detail">
+                                    <span class="circle circle__solid__flight--detail"></span>
+                                    <span class="line__flight--detail"></span>
+                                    <span class="circle circle__fill__flight--detail"></span>
+                                </div>
+                            </div>
+
+                            <div class="content__wrapper">
+                                <div class="content flight__detail--tab--content--from">
+                                    <h3>Da Nang (DAD)</h3>
+                                    <p>Da Nang Airport</p>
+                                </div>
+    
+                                <div class="content flight__detail--tab--content--to">
+                                    <h3>Ho Chi Minh City (SGN)</h3>
+                                    <p>Tansonnhat Intl</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flight__detail--tab--direct--right">
+                            <div class="flight__detail--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="flight__detail--info">
+                                <div class="flight__detail--info--item">
+                                    <div class="item__1">
+                                        <div class="title">Baggage <span>20kg</span></div>
+                                        <div class="title">In-flight <span>Meal</span></div>
+                                        <div class="title">In-flight <span>Entertainment</span></div>
+                                    </div>
+                                    <div class="item__2">
+                                        <div class="title">Aircraft <span>Airbus A321</span></div>
+                                        <div class="title">Seat layout <span>3-3</span></div>
+                                        <div class="title">Seat pitch <span>29 inches (standard)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight__fare__info--tab">
+                        <div class="flight__fare__info--tab--left">
+                            <h3>CONDITON</h3>
+                            <div class="flight__fare__info--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="destination__wrapper">
+                                <div class="detination__from">
+                                    <p class="destination__name">Da Nang</p>
+                                    <span class="destination__type">Economy</span>
+                                </div>
+                                <div class="process__flight__fare__info">
+                                    <div class="line__circle__flight__fare__info">
+                                        <span class="circle circle__solid__flight__fare__info"></span>
+                                        <span class="line__flight__fare__info"></span>
+                                        <span class="circle circle__fill__flight__fare__info"></span>
+                                    </div>
+                                </div>
+                                <div class="detination__to"><p class="destination__name">Ho Chi Minh City</p></div>
+
+                            </div>
+
+                            <div class="refund__type">
+                                Non - Refundable
+                            </div>
+
+
+
+                        </div>
+                        <div class="flight__fare__info--tab--right">
+                            <h3>PRICE DETAILS</h3>
+                            <div class="price__info">
+                                <div class="price__info--container">
+                                    <div class="price__info--title">
+                                        <p>Adult Basic Fare (x1)</p>
+                                        <p>Tax</p>
+                                        <p>Regular Total Price</p>
+                                        <p class="orange">Save</p>
+                                    </div>
+    
+                                    <div class="price__info--money">
+                                        <p>1,326,000 vnd</p>
+                                        <p>included</p>
+                                        <p>1,326,000 vnd</p>
+                                        <p>-4000 vnd</p>
+                                    </div>
+                                </div>
+                                <div class="you__pay">
+                                    <p>You pay</p>
+                                    <p class="orange">1,322,000 vnd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list__left--item">
+                    <div class="left__item--top">
+                        <div class="logo__brand--container">
+                            <img
+                                alt='brand'
+                                src="./assest/images/brands/bamboo.jpg"
+                                class="brand__logo"
+                            />
+                            <h3 class="brand__name">BAMBOO AIRWAY</h3>
+                        </div>
+
+                        <div class="direct">
+                            <div class="dep__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+
+                            <div class="process">
+                                <span class="estimate">1h 30m</span>
+                                <div class="line__circle">
+                                    <span class="circle circle__solid"></span>
+                                    <span class="line"></span>
+                                    <span class="circle circle__fill"></span>
+                                </div>
+                                <span class="text">Direct</span>
+                            </div>
+
+                            <div class="ret__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fee">
+                            <div class="fee__1">
+                                <div class="fee__1--left">
+                                    <i class="fee__1--icon fa-solid fa-suitcase"></i>
+                                    <div class="title">Baggage <span>20</span></div>
+                                </div>
+                                <div class="fee__2--left">
+                                    <i class="fee__2--icon fa-solid fa-utensils"></i>
+                                    <div class="title">In-flight <span>Meal</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fee__2">
+                                <div class="price"><del>1,326,00 vnd</del></div>
+                                <div class="price"><span>1,322,00 vnd</span></div>
+                            </div>
+                        </div>
+
+                        <button class="btn choose__btn">Choose</button>
+                    </div>
+                    <div class="left__item--tabs">
+                        <div class="tabs__title  flight__detail ">
+                            <p>FLIGHT DETAIL</p>
+                            <span class="underline"></span>
+                        </div>
+                        
+                        <div class="tabs__title flight__fare__info">
+                            <p>FARE INFO</p>
+                            <span class="underline__2"></span>
+                        </div>
+                        <div class="tabs__line"></div>
+                    </div>
+                    <div class="flight__detail--tab">
+                        <div class="flight__detail--tab--direct--left">
+                            <div class="dep__ret--container">
+                                <div class="dep__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+    
+                                <span class="estimate">1h 30m</span>
+    
+                                <div class="ret__time">
+                                    <div class="time">
+                                        <p>21:40</p>
+                                        <span >11 Feb</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="process__flight--detail">
+                                <div class="line__circle__flight--detail">
+                                    <span class="circle circle__solid__flight--detail"></span>
+                                    <span class="line__flight--detail"></span>
+                                    <span class="circle circle__fill__flight--detail"></span>
+                                </div>
+                            </div>
+
+                            <div class="content__wrapper">
+                                <div class="content flight__detail--tab--content--from">
+                                    <h3>Da Nang (DAD)</h3>
+                                    <p>Da Nang Airport</p>
+                                </div>
+    
+                                <div class="content flight__detail--tab--content--to">
+                                    <h3>Ho Chi Minh City (SGN)</h3>
+                                    <p>Tansonnhat Intl</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flight__detail--tab--direct--right">
+                            <div class="flight__detail--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="flight__detail--info">
+                                <div class="flight__detail--info--item">
+                                    <div class="item__1">
+                                        <div class="title">Baggage <span>20kg</span></div>
+                                        <div class="title">In-flight <span>Meal</span></div>
+                                        <div class="title">In-flight <span>Entertainment</span></div>
+                                    </div>
+                                    <div class="item__2">
+                                        <div class="title">Aircraft <span>Airbus A321</span></div>
+                                        <div class="title">Seat layout <span>3-3</span></div>
+                                        <div class="title">Seat pitch <span>29 inches (standard)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flight__fare__info--tab">
+                        <div class="flight__fare__info--tab--left">
+                            <h3>CONDITON</h3>
+                            <div class="flight__fare__info--type">
+                                <img src="/assest/images/brands/bamboo.jpg" alt="brand" class="flight__detail--logo"/>
+                                <div class="content--wrapper">
+                                    <h3>BAMBOO AIRWAYS</h3>
+                                    <p>QH-183 &bull; Economy</p>
+                                </div>
+                            </div>
+                            <div class="destination__wrapper">
+                                <div class="detination__from">
+                                    <p class="destination__name">Da Nang</p>
+                                    <span class="destination__type">Economy</span>
+                                </div>
+                                <div class="process__flight__fare__info">
+                                    <div class="line__circle__flight__fare__info">
+                                        <span class="circle circle__solid__flight__fare__info"></span>
+                                        <span class="line__flight__fare__info"></span>
+                                        <span class="circle circle__fill__flight__fare__info"></span>
+                                    </div>
+                                </div>
+                                <div class="detination__to"><p class="destination__name">Ho Chi Minh City</p></div>
+
+                            </div>
+
+                            <div class="refund__type">
+                                Non - Refundable
+                            </div>
+
+
+
+                        </div>
+                        <div class="flight__fare__info--tab--right">
+                            <h3>PRICE DETAILS</h3>
+                            <div class="price__info">
+                                <div class="price__info--container">
+                                    <div class="price__info--title">
+                                        <p>Adult Basic Fare (x1)</p>
+                                        <p>Tax</p>
+                                        <p>Regular Total Price</p>
+                                        <p class="orange">Save</p>
+                                    </div>
+    
+                                    <div class="price__info--money">
+                                        <p>1,326,000 vnd</p>
+                                        <p>included</p>
+                                        <p>1,326,000 vnd</p>
+                                        <p>-4000 vnd</p>
+                                    </div>
+                                </div>
+                                <div class="you__pay">
+                                    <p>You pay</p>
+                                    <p class="orange">1,322,000 vnd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="list__right">
+                <div class="list__right--container">
+                    <h3 class="list__right--title">YOUR FLIGHTS</h3>
+                    <div class="your__flight--info">
+                        <div class="section__1">
+                            <div class="circle__number">
+                                <span class="number">1</span>
+                            </div>
+                            <div class="section__1--info">
+                                <p class="section__1--info-date">
+                                    Fri, 11 Feb, 2022
+                                </p>
+                                <p class="section__1--info-destination">
+                                    Da Nang - Ho Chi Minh
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="logo__brand--container">
+                            <img
+                                alt='brand'
+                                src="./assest/images/brands/bamboo.jpg"
+                                class="brand__logo section__1__brand__logo"
+                            />
+                            <div class="details">
+                                <h3 class="brand__name">BAMBOO AIRWAY</h3>
+                                <span class="details__text">Details</span>
+                            </div>
+                        </div>
+
+                        <div class="direct section__1__direct">
+                            <div class="dep__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+
+                            <div class="process">
+                                <span class="estimate">1h 30m</span>
+                                <div class="line__circle">
+                                    <span class="circle circle__solid"></span>
+                                    <span class="line"></span>
+                                    <span class="circle circle__fill"></span>
+                                </div>
+                                <span class="text">Direct</span>
+                            </div>
+
+                            <div class="ret__time">
+                                <div class="time">
+                                    <p>21:40</p>
+                                    <span class="btn tag">DAD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn change__flight__btn">Change departure flight</button>
+
+                        <div class="section__2">
+                            <div class="circle__number__2">
+                                <span class="number__2">2</span>
+                            </div>
+                            <div class="section__2--info">
+                                <p class="section__2--info-date">
+                                    Sun, 13 Feb, 2022
+                                </p>
+                                <p class="section__2--info-destination">
+                                    Ho Chi Minh - Da Nang
+                                </p>
+                            </div>
+                        </div>
+                        <div class="subtotal">
+                            <p>Subtotal</p>
+                            <span>1,322,000 vnd</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- List end -->
+
+        <!-- Footer start -->
+        <div class="footer">
+            <div class="contact">
+                <div class="phone">
+                    <i class="phone__icon fa-solid fa-phone"></i>
+                    <p>Call us: +84 908 02 02 58</p>
+                </div>
+                <div class="email">
+                    <i class="mailbox__icon fa-solid fa-envelope"></i>
+                    <p>Email: Chucinog@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="social">
+                <p>Follow us</p>
+                <div class="line__social"></div>
+                <div class="facebook">
+                    <i class="facebook__icon fa-brands fa-facebook"></i>
+                </div>
+                <div class="instagram">
+                    <i class="instagram__icon fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Footer end -->
+    </div>
+</body>
+</html>
